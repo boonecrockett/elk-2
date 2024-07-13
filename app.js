@@ -23,9 +23,10 @@ const questions = [
             "At the first tine",
             "At the eye socket"
         ],
+        buyUrl: "https://www.boone-crockett.org/how-score-north-american-big-game-5th-edition?ref=quiz",
         correctAnswer: 1,
-        explanation: "The main beam length measurement starts at the point where the center line of the antler along the outer side intersects the burr. (How to Score North American Big Game, p. 72-73)",
-        buyUrl: "https://www.boone-crockett.org/how-score-north-american-big-game-5th-edition?ref=quiz"
+        explanation: "The main beam length measurement starts at the point where the center line of the antler along the outer side intersects the burr. (How to Score North American Big Game, p. 72-73)"
+        
     },
     {
         question: "What is done if an abnormal point arises between normal points when taking circumference measurements?",
