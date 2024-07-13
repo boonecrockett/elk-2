@@ -239,6 +239,8 @@ const questions = [
     }
 ];
 
+const MANUAL_BUY_URL = "https://www.boone-crockett.org/how-score-north-american-big-game-5th-edition?ref=quiz";
+
 const QuizApp = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
@@ -293,7 +295,8 @@ const QuizApp = () => {
     }
 
     const currentQ = questions[currentQuestion];
- return (
+
+    return (
         <div className="max-w-2xl mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4">Whitetail Scoring Quiz</h1>
             <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
@@ -330,7 +333,7 @@ const QuizApp = () => {
                         </AlertDescription>
                         <div className="mt-4">
                             <a
-                                href={currentQ.buyUrl}
+                                href={MANUAL_BUY_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block bg-green-500 text-white px-4 py-2 rounded text-sm font-medium hover:bg-green-600 transition-colors duration-200"
