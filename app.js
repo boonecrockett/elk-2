@@ -25,6 +25,7 @@ const questions = [
         ],
         correctAnswer: 1,
         explanation: "The main beam length measurement starts at the point where the center line of the antler along the outer side intersects the burr. (How to Score North American Big Game, p. 72-73)"
+        buyUrl: "https://www.boone-crockett.org/how-score-north-american-big-game-5th-edition?ref=quiz"
     },
     {
         question: "What is done if an abnormal point arises between normal points when taking circumference measurements?",
@@ -292,9 +293,11 @@ const QuizApp = () => {
 
     const currentQ = questions[currentQuestion];
 
+    const currentQ = questions[currentQuestion];
+
     return (
         <div className="max-w-2xl mx-auto p-4">
-            <h1 className="text-2xl font-bold mb-4">Quiz 2 - Scoring American Elk</h1>
+            <h1 className="text-2xl font-bold mb-4">Whitetail Scoring Quiz</h1>
             <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
             <p className="text-lg font-semibold mb-4">{currentQ.question}</p>
             <div className="space-y-2">
@@ -329,12 +332,22 @@ const QuizApp = () => {
                 </Alert>
             )}
             {showExplanation && (
-                <button
-                    onClick={nextQuestion}
-                    className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                >
-                    {currentQuestion < questions.length - 1 ? 'Next Question' : 'Finish Quiz'}
-                </button>
+                <div className="mt-4 space-y-4">
+                    <button
+                        onClick={nextQuestion}
+                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    >
+                        {currentQuestion < questions.length - 1 ? 'Next Question' : 'Finish Quiz'}
+                    </button>
+                    <a
+                        href={currentQ.buyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center"
+                    >
+                        Buy the Scoring Manual or the Chapter
+                    </a>
+                </div>
             )}
             <p className="mt-4">Current Score: {score} / {currentQuestion + 1}</p>
         </div>
