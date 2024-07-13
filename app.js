@@ -337,7 +337,7 @@ const QuizApp = () => {
                                 rel="noopener noreferrer"
                                 className="inline-block bg-green-500 text-white px-4 py-2 rounded text-sm font-medium hover:bg-green-600 transition-colors duration-200"
                             >
-                                Buy Scoring Manual/Chapter
+                                Buy Chapter - Instant Download!
                             </a>
                         </div>
                     </Alert>
