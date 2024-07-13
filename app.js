@@ -293,10 +293,9 @@ const QuizApp = () => {
     }
 
     const currentQ = questions[currentQuestion];
-
-    return (
+ return (
         <div className="max-w-2xl mx-auto p-4">
-            <h1 className="text-2xl font-bold mb-4">American Elk Scoring Quiz</h1>
+            <h1 className="text-2xl font-bold mb-4">Whitetail Scoring Quiz</h1>
             <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
             <p className="text-lg font-semibold mb-4">{currentQ.question}</p>
             <div className="space-y-2">
@@ -323,21 +322,14 @@ const QuizApp = () => {
                 </p>
             )}
             {showExplanation && (
-                <Alert className="mt-4">
-                    <AlertTitle>Explanation</AlertTitle>
-                    <AlertDescription>
-                        {currentQ.explanation}
-                    </AlertDescription>
-                </Alert>
-            )}
-            {showExplanation && (
-                <div className="mt-4 space-y-4">
-                    <button
-                        onClick={nextQuestion}
-                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                    >
-                        {currentQuestion < questions.length - 1 ? 'Next Question' : 'Finish Quiz'}
-                    </button>
+                <div className="space-y-4">
+                    <Alert className="mt-4">
+                        <AlertTitle>Explanation</AlertTitle>
+                        <AlertDescription>
+                            {currentQ.explanation}
+                        </AlertDescription>
+                    </Alert>
+                    
                     <a
                         href={currentQ.buyUrl}
                         target="_blank"
@@ -346,6 +338,13 @@ const QuizApp = () => {
                     >
                         Buy the Scoring Manual or the Chapter
                     </a>
+                    
+                    <button
+                        onClick={nextQuestion}
+                        className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    >
+                        {currentQuestion < questions.length - 1 ? 'Next Question' : 'Finish Quiz'}
+                    </button>
                 </div>
             )}
             <p className="mt-4">Current Score: {score} / {currentQuestion + 1}</p>
