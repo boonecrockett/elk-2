@@ -322,22 +322,23 @@ const QuizApp = () => {
                 </p>
             )}
             {showExplanation && (
-                <div className="space-y-4">
-                    <Alert className="mt-4">
-                        <AlertTitle>Explanation</AlertTitle>
-                        <AlertDescription>
-                            {currentQ.explanation}
-                        </AlertDescription>
-                    </Alert>
-                    
-                    <a
-                        href={currentQ.buyUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center"
-                    >
-                        Buy the Scoring Manual or the Chapter
-                    </a>
+                <div className="mt-4 space-y-4">
+                    <div className="border border-yellow-400 rounded overflow-hidden">
+                        <Alert className="rounded-t-none">
+                            <AlertTitle>Explanation</AlertTitle>
+                            <AlertDescription>
+                                {currentQ.explanation}
+                            </AlertDescription>
+                        </Alert>
+                        <a
+                            href={currentQ.buyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block bg-green-500 text-white px-4 py-2 text-center hover:bg-green-600 transition-colors duration-200"
+                        >
+                            Buy the Scoring Manual or the Chapter
+                        </a>
+                    </div>
                     
                     <button
                         onClick={nextQuestion}
