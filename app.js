@@ -323,22 +323,22 @@ const QuizApp = () => {
             )}
             {showExplanation && (
                 <div className="mt-4 space-y-4">
-                    <div className="border border-yellow-400 rounded overflow-hidden">
-                        <Alert className="rounded-t-none">
-                            <AlertTitle>Explanation</AlertTitle>
-                            <AlertDescription>
-                                {currentQ.explanation}
-                            </AlertDescription>
-                        </Alert>
-                        <a
-                            href={currentQ.buyUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block bg-green-500 text-white px-4 py-2 text-center hover:bg-green-600 transition-colors duration-200"
-                        >
-                            Buy the Scoring Manual or the Chapter
-                        </a>
-                    </div>
+                    <Alert className="relative">
+                        <AlertTitle>Explanation</AlertTitle>
+                        <AlertDescription>
+                            {currentQ.explanation}
+                        </AlertDescription>
+                        <div className="mt-4">
+                            <a
+                                href={currentQ.buyUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block bg-green-500 text-white px-4 py-2 rounded text-sm font-medium hover:bg-green-600 transition-colors duration-200"
+                            >
+                                Buy Manual/Chapter
+                            </a>
+                        </div>
+                    </Alert>
                     
                     <button
                         onClick={nextQuestion}
@@ -352,5 +352,4 @@ const QuizApp = () => {
         </div>
     );
 };
-
 ReactDOM.render(<QuizApp />, document.getElementById('root'));
