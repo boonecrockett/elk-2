@@ -105,7 +105,7 @@ const questions = [
         explanation: "Antler points are measured along the outer side of their curve. In most cases, the normal points curve inward and are simply measured on the outside of the rack. (How to Score North American Big Game, p. 75)"
     },
     {
-        question: "How is the inside spread credit determined for American elk?",
+        question: "How is spread credit determined for American elk?",
         choices: [
             "It's always the actual inside spread measurement",
             "It's the actual inside spread or the length of the longer main beam, whichever is less",
@@ -131,10 +131,10 @@ const questions = [
         choices: [
             "At the burr",
             "At the beam tip",
-            "Halfway between the G-3 and the beam tip",
+            "Taken halfway between the G-4 point and the antler tip",
             "It's not measured"
         ],
-        correctAnswer: 2,
+        correctAnswer: 3,
         explanation: "On the extremely rare occasion when there are only four normal points (not including the beam tip) on the antler, the H-4 circumference is taken halfway between the G-4 point and the antler tip. (How to Score North American Big Game, p. 76)"
     },
     {
@@ -149,7 +149,7 @@ const questions = [
         explanation: "Burr tines or beauty points (points arising from the antler burr) are classified as abnormal points on American elk. (How to Score North American Big Game, p. 67)"
     },
     {
-        question: "What is the minimum score for a typical American elk to qualify for Boone and Crockett All-Time records?",
+        question: "What is the minimum entry score for a typical American elk to qualify for Boone and Crockett All-Time records?",
         choices: [
             "360",
             "365",
