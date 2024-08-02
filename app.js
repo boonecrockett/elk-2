@@ -300,7 +300,7 @@ const QuizApp = () => {
             <img 
                 src="https://aws.boone-crockett.org/s3fs-public/styles/12-col_848px/public/thumbnails/image/150_bw_logo_0.png" 
                 alt="Boone and Crockett Club Logo" 
-                className="absolute top-0 right-0 w-[150px] h-[150px]"
+                className="absolute top-0 right-0 w-[75px] h-[75px]"
             />
             <h1 className="text-2xl font-bold mb-4">American Elk Scoring Quiz</h1>
             <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
