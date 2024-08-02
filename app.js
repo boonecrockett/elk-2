@@ -130,11 +130,11 @@ const questions = [
         question: "Where is the H-4 circumference taken on American elk if there are only four normal points?",
         choices: [
             "At the burr",
-            "At the beam tip",
             "Taken halfway between the G-4 point and the antler tip",
+            "At the beam tip",
             "It's not measured"
         ],
-        correctAnswer: 3,
+        correctAnswer: 2,
         explanation: "On the extremely rare occasion when there are only four normal points (not including the beam tip) on the antler, the H-4 circumference is taken halfway between the G-4 point and the antler tip. (How to Score North American Big Game, p. 76)"
     },
     {
