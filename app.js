@@ -43,7 +43,7 @@ const questions = [
         choices: [
             "With a flexible tape measure around the outside of the antlers",
             "By eye estimation",
-            "Using a wall, carpenter's level, and ruler",
+            "Using a wall, carpenter's ruler, and level",
             "A string stretched between the widest points"
         ],
         correctAnswer: 2,
