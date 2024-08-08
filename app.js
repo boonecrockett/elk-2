@@ -39,12 +39,12 @@ const questions = [
         explanation: "When an abnormal point arises between normal points, the circumference measurements are taken at the narrowest location on either side of the abnormal point. (How to Score North American Big Game, p. 76)"
     },
     {
-        question: "How is the greatest spread measurement best taken for American elk?",
+        question: "What tools are needed to measure greatest spread for American elk?",
         choices: [
             "With a flexible tape measure around the outside of the antlers",
             "By eye estimation",
             "Using a wall, carpenter's level, and ruler",
-            "As a straight line measurement between the widest points"
+            "A string stretched between the widest points"
         ],
         correctAnswer: 2,
         explanation: "The greatest-spread measurement is best taken by laying the rack on the floor against a vertical wall, using a carpenter's level, and measuring with a folding carpenter's ruler or quarter-inch steel tape. (How to Score North American Big Game, p. 69-70)"
